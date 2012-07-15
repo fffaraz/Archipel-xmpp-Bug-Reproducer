@@ -3,7 +3,7 @@
 sudo apt-get install build-essential qt4-qmake libqtcore4 libqtgui4 libqt4-network libqt4-xml
 
 ### Compile
-qmake src
+qmake src/xmppTester.pro
 make
 
 ### Run
