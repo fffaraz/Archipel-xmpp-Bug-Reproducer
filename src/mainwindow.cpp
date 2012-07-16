@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     isStarted=false;
     state = -1;
+    vmState = -1;
     connect(&timer, SIGNAL(timeout()), this, SLOT(onTimerTimeout()));
 
     login = new DialogLogin(this);

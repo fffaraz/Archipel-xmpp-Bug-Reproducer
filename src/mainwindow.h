@@ -23,7 +23,12 @@ private:
     DialogLogin* login;
     xmppClient* client;
     bool isStarted;
+
+    // Command State
     int state;
+    // VM State
+    int vmState;
+
     QTimer timer;
     void sendMessage(QString to, QString msg);
 
