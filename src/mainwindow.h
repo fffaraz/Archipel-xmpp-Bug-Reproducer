@@ -28,8 +28,12 @@ private:
     int state;
     // VM State
     int vmState;
+    // Loop Modes
+    bool isOneTime;
+    int loopMode;
 
-    QTimer timer;
+    QTimer cmdTimer;
+    QTimer loopTimer;
     void sendMessage(QString to, QString msg);
 
 public slots:
@@ -37,12 +41,17 @@ public slots:
 
 private slots:
     void onMessageReceived(QString from, QString msg);
+    void onCMDTimerTimeout();
+    void onLoopTimerTimeout();
     void on_btnSend_clicked();
     void on_txtInput_returnPressed();
     void on_btnStart_clicked();
     void on_btnClear_clicked();
     void on_txtAddCMD_returnPressed();
-    void onTimerTimeout();
+    void on_btnClearVM_clicked();
+    void on_txtAddVM_returnPressed();
+    void on_chkOneTime_toggled(bool checked);
+    void on_radio1_toggled(bool checked);
 };
 
 #endif // MAINWINDOW_H

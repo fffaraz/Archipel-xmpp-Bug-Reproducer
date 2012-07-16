@@ -113,7 +113,7 @@
            </size>
           </property>
           <property name="text">
-           <string>Clear</string>
+           <string>Clear CMD List</string>
           </property>
          </widget>
         </item>
@@ -176,7 +176,7 @@
            </size>
           </property>
           <property name="text">
-           <string>Clear</string>
+           <string>Clear VM List</string>
           </property>
          </widget>
         </item>
@@ -232,7 +232,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinDelay_2">
+       <widget class="QSpinBox" name="spinDelayLoop">
         <property name="maximumSize">
          <size>
           <width>200</width>
