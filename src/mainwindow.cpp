@@ -58,6 +58,7 @@ void MainWindow::on_btnStart_clicked()
     if(isStarted)
     {
         cmdTimer.stop();
+        loopTimer.stop();
         state=-1;
         vmState=-1;
         isStarted = false;
@@ -137,14 +138,9 @@ void MainWindow::onCMDTimerTimeout()
     if(vmState >= ui->lstVM->count())  // reaching end of VMs queue
     {
         vmState=0;
-        if(isOneTime)
-            on_btnStart_clicked();
-        else
-        {
-            state++;
-            cmdTimer.stop();
-            loopTimer.start(ui->spinDelayLoop->value());
-        }
+        state++;
+        cmdTimer.stop();
+        loopTimer.start(ui->spinDelayLoop->value());
     }
 
     if(state >= ui->lstCMD->count()) // reaching end of command queue
