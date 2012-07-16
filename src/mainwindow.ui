@@ -246,7 +246,7 @@
          <number>10000</number>
         </property>
         <property name="value">
-         <number>1000</number>
+         <number>2000</number>
         </property>
        </widget>
       </item>
@@ -267,6 +267,9 @@
        <widget class="QCheckBox" name="chkOneTime">
         <property name="text">
          <string>One Time</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
         </property>
        </widget>
       </item>

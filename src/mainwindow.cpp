@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     isStarted=false;
-    isOneTime=false;
+    isOneTime=true;
     loopMode=1;
     state = -1;
     vmState = -1;
@@ -133,6 +133,20 @@ void MainWindow::onCMDTimerTimeout()
     default:
         return;
     }
+
+    if(vmState >= ui->lstVM->count())  // reaching end of VMs queue
+    {
+        vmState=0;
+        if(isOneTime)
+            on_btnStart_clicked();
+        else
+        {
+            state++;
+            cmdTimer.stop();
+            loopTimer.start(ui->spinDelayLoop->value());
+        }
+    }
+
     if(state >= ui->lstCMD->count()) // reaching end of command queue
     {
         state=0;
@@ -144,13 +158,10 @@ void MainWindow::onCMDTimerTimeout()
             loopTimer.start(ui->spinDelayLoop->value());
         }
     }
-
 }
 
 void MainWindow::onLoopTimerTimeout()
 {
-    if(loopMode == 2)
-        state++;
     cmdTimer.start();
 }
 
