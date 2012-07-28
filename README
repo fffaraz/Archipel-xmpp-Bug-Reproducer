@@ -1,0 +1,48 @@
+
+Operational Modes:
+
+1.  One Time,  To One
+2.  One Time,  To Many
+3. !One Time,  To One
+4. !One Time,  To Many
+
+
+Descriptions:
+
+1. Sends Commands in the queue with "CMD Delay" to One Target. and then stops when reaches at the end of the queue.
+
+2. Sends each Command in "Commands Queue" to All VMs in "VMs Queue" with "CMD Delay", then waits for "Loop Delay" and goes to next Command. Stops when all commands sent to all VMs.
+
+3. Just like "1" but at the end waits for "Loop Delay" and starts again.
+
+4. Just like "2" but at the end waits for "Loop Delay" and starts again.
+
+
+
+Examples:
+
+1.
+Select first command, send it to the Target.
+Wait for CMD Delay.
+Select second command, send it to the target.
+Wait for CMD Delay.
+Select third command, send it to the target.
+Stop.
+
+2.
+Select first command.
+Send it to first vm.
+Wait for CMD Delay.
+Send it to second vm.
+Wait for CMD Delay.
+Send it to third vm.
+Wait for Loop Delay.
+Select second command.
+Send it to first vm.
+Wait for CMD Delay.
+Send it to second vm.
+Wait for CMD Delay.
+Send it to third vm.
+Stop.
+
+
