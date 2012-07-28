@@ -1,0 +1,226 @@
+pubsub.flp : 
+
+pubsub.flp : 
+
+pubsub.flp : 
+
+admin@flp : 
+
+pubsub.flp : 
+
+admin@flp : 
+
+admin@flp : 
+
+admin@flp : 
+
+admin@flp : 
+
+admin@flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: hi
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+Hello admin! How are you today?
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+pubsub.flp : 
+
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+pubsub.flp : 
+
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I'm starting.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+466bd0ba-cd94-11e1-9e20-00219bd95108@flp/flp : 
+I've destroyed myself.
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: destroy
+Me : 466bd0ba-cd94-11e1-9e20-00219bd95108@flp: start
