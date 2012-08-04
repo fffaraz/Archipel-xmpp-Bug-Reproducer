@@ -16,9 +16,13 @@ public:
 
 signals:
     void messageReceived(QString from, QString msg);
+    void iqReceived(QString iq);
 
 public slots:
     void messageReceived(const QXmppMessage&);
+    void iqReceived(const QXmppIq&);
+    void Sent(QString message);
+    void Sent(const QXmppIq&);
 
 };
 

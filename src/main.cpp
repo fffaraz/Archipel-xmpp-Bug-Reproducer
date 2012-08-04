@@ -1,12 +1,12 @@
 #include <QtGui/QApplication>
-#include "mainwindow.h"
 
+#include "windowmain.h"
 #include "QXmppLogger.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    WindowMain w;
     w.show();
 
     QXmppLogger::getLogger()->setLoggingType(QXmppLogger::StdoutLogging);

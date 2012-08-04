@@ -26,14 +26,26 @@ UI_DIR = ../tmp/.ui
 SOURCES += main.cpp\
         mainwindow.cpp \
     xmppclient.cpp \
-    dialoglogin.cpp
+    dialoglogin.cpp \
+    windowmain.cpp \
+    windowiq.cpp
 
 HEADERS  += mainwindow.h \
     xmppclient.h \
-    dialoglogin.h
+    dialoglogin.h \
+    windowmain.h \
+    windowiq.h
 
 FORMS    += mainwindow.ui \
-    dialoglogin.ui
+    dialoglogin.ui \
+    windowmain.ui \
+    windowiq.ui
+
+
+
+
+
+
 
 
 
