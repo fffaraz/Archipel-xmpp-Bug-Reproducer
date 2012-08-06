@@ -65,6 +65,7 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">
@@ -74,12 +75,15 @@
     <addaction name="separator"/>
     <addaction name="actionSend_IQ"/>
     <addaction name="separator"/>
-    <addaction name="action_3"/>
+    <addaction name="actionPeace_IQ"/>
+    <addaction name="separator"/>
+    <addaction name="action_2"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionNadarad"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
@@ -99,6 +103,26 @@
   <action name="action_3">
    <property name="text">
     <string>...</string>
+   </property>
+  </action>
+  <action name="actionPeace_IQ">
+   <property name="text">
+    <string>Peace IQ</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionNadarad">
+   <property name="text">
+    <string>هلپ</string>
    </property>
   </action>
  </widget>

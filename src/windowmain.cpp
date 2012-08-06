@@ -75,3 +75,9 @@ void WindowMain::on_actionSend_IQ_triggered()
     WindowIq* iq = new WindowIq(client, this);
     iq->show();
 }
+
+void WindowMain::on_actionPeace_IQ_triggered()
+{
+    WindowPeace* peace = new WindowPeace(client, this);
+    peace->show();
+}

@@ -7,6 +7,7 @@
 #include "xmppclient.h"
 #include "mainwindow.h"
 #include "windowiq.h"
+#include "windowpeace.h"
 
 namespace Ui {
     class WindowMain;
@@ -36,6 +37,7 @@ private slots:
     void on_btnSend_clicked();
     void on_txtInput_returnPressed();
     void on_actionSend_IQ_triggered();
+    void on_actionPeace_IQ_triggered();
 };
 
 #endif // WINDOWMAIN_H

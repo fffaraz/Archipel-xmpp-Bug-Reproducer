@@ -28,18 +28,24 @@ SOURCES += main.cpp\
     xmppclient.cpp \
     dialoglogin.cpp \
     windowmain.cpp \
-    windowiq.cpp
+    windowiq.cpp \
+    windowpeace.cpp
 
 HEADERS  += mainwindow.h \
     xmppclient.h \
     dialoglogin.h \
     windowmain.h \
-    windowiq.h
+    windowiq.h \
+    windowpeace.h
 
 FORMS    += mainwindow.ui \
     dialoglogin.ui \
     windowmain.ui \
-    windowiq.ui
+    windowiq.ui \
+    windowpeace.ui
+
+
+
 
 
 
