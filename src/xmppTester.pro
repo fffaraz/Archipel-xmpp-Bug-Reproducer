@@ -36,13 +36,17 @@ HEADERS  += mainwindow.h \
     dialoglogin.h \
     windowmain.h \
     windowiq.h \
-    windowpeace.h
+    windowpeace.h \
+    peacedelay.h
 
 FORMS    += mainwindow.ui \
     dialoglogin.ui \
     windowmain.ui \
     windowiq.ui \
     windowpeace.ui
+
+
+
 
 
 

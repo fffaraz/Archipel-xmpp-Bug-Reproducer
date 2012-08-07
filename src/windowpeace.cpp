@@ -8,6 +8,7 @@ WindowPeace::WindowPeace(xmppClient* Client, QWidget *parent) :
 {
     ui->setupUi(this);
     _isStarted = false;
+    _delays = new QList<PeaceDelay*>();
     el1 = new QXmppElement();
     connect(&_timer, SIGNAL(timeout()), this, SLOT(onTimerTimeout()));
     connect(Client, SIGNAL(iqReceived(QXmppIq)), this, SLOT(iqReceived(QXmppIq)));
@@ -24,16 +25,21 @@ void WindowPeace::on_btnSend_clicked()
     el.clear();
     el.append(*el1);
     QString target = ui->txtTarget->text();
-    for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
     {
         QXmppIq iq;
         iq.setTo(target);
         iq.setExtensions(el);
-        qDebug() << "IQ ID: " << iq.id();
-        // TODO: add to qmap
+        //qDebug() << "IQ ID: " << iq.id();
+
+        PeaceDelay* d = new PeaceDelay();
+        d->IqId = iq.id();
+        _delays->append(d);
+
         client->sendPacket(iq);
+        d->timer.start();
         client->Sent(iq);
     }
+    if(!_timer.isActive()) updateDelays();
 }
 
 void WindowPeace::on_txtAttr1_returnPressed()
@@ -76,14 +82,24 @@ void WindowPeace::on_btnAddChild_clicked()
     updateXML();
 }
 
-void WindowPeace::iqReceived(const QXmppIq &)
+void WindowPeace::iqReceived(const QXmppIq &iq)
 {
-
+    for(int i=0; i<_delays->count(); ++i)
+        if(_delays->value(i)->IqId == iq.id())
+        {
+            PeaceDelay* p = _delays->value(i);
+            p->isReceived = true;
+            p->delayms = p->timer.elapsed();
+        }
 }
 
 void WindowPeace::onTimerTimeout()
 {
-    on_btnSend_clicked();
+    for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
+    {
+        on_btnSend_clicked();
+    }
+    updateDelays();
 }
 
 void WindowPeace::updateXML()
@@ -95,6 +111,17 @@ void WindowPeace::updateXML()
     //qDebug() << "makeXML: " << msg;
 }
 
+void WindowPeace::updateDelays()
+{
+    ui->lstDelays->clear();
+    for(int i=0; i<_delays->count(); ++i)
+    {
+        int value = _delays->value(i)->delayms;
+        QString iq = _delays->value(i)->IqId;
+        ui->lstDelays->addItem(iq + " : " + QString::number(value) + " ms");
+    }
+    ui->lstDelays->scrollToBottom();
+}
 
 
 void WindowPeace::on_btnStart_clicked()
@@ -105,6 +132,7 @@ void WindowPeace::on_btnStart_clicked()
         ui->btnStart->setText("Start");
         ui->btnSend->setEnabled(true);
         ui->txtTarget->setEnabled(true);
+        _timer.stop();
     }
     else
     {
@@ -112,5 +140,11 @@ void WindowPeace::on_btnStart_clicked()
         ui->btnStart->setText("Stop");
         ui->btnSend->setEnabled(false);
         ui->txtTarget->setEnabled(false);
+
+        for(int i=0; i<_delays->count(); ++i)
+            delete _delays->value(i);
+        delete _delays;
+        _delays = new QList<PeaceDelay*>();
+        _timer.start(ui->spinDelayLoop->value());
     }
 }
