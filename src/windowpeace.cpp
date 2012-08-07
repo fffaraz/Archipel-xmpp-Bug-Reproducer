@@ -39,7 +39,13 @@ void WindowPeace::on_btnSend_clicked()
         d->timer.start();
         client->Sent(iq);
     }
-    if(!_timer.isActive()) updateDelays();
+
+    if(!_timer.isActive())
+    {
+        updateDelays();
+        _timer.singleShot(500, this, SLOT(onTimerTimeout()));
+    }
+
 }
 
 void WindowPeace::on_txtAttr1_returnPressed()
@@ -95,10 +101,11 @@ void WindowPeace::iqReceived(const QXmppIq &iq)
 
 void WindowPeace::onTimerTimeout()
 {
-    for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
-    {
-        on_btnSend_clicked();
-    }
+    if(_isStarted)
+        for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
+        {
+            on_btnSend_clicked();
+        }
     updateDelays();
 }
 
