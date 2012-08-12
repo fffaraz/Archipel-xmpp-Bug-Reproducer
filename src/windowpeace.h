@@ -5,6 +5,7 @@
 #include <QTimer>
 #include <QTime>
 #include <QMap>
+#include <QClipboard>
 #include "dialoglogin.h"
 #include "xmppclient.h"
 #include "peacedelay.h"

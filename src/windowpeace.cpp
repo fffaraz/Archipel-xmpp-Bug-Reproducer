@@ -166,9 +166,11 @@ void WindowPeace::on_btnStart_clicked()
 void WindowPeace::on_btnCopy_clicked()
 {
     QStringList texts;
+    QList<QListWidgetItem *> items = ui->lstDelays->findItems(QString("*"), Qt::MatchWrap | Qt::MatchWildcard);
     foreach(QListWidgetItem *item, items)
         texts << item->text();
 
+    texts << "--------";
     texts << ui->lblAvg->text();
 
     QApplication::clipboard()->setText(texts.join("\n"));
