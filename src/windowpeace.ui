@@ -202,7 +202,22 @@
      </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="lstDelays"/>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QListWidget" name="lstDelays">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ContiguousSelection</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblAvg">
+        <property name="text">
+         <string>Average : </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

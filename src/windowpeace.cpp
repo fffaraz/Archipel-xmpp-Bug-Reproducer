@@ -13,6 +13,8 @@ WindowPeace::WindowPeace(xmppClient* Client, QWidget *parent) :
     connect(&_timer, SIGNAL(timeout()), this, SLOT(onTimerTimeout()));
     connect(Client, SIGNAL(iqReceived(QXmppIq)), this, SLOT(iqReceived(QXmppIq)));
     on_btnClear_clicked();
+    _avg_t=0;
+    _avg_n=0;
 }
 
 WindowPeace::~WindowPeace()
@@ -96,6 +98,8 @@ void WindowPeace::iqReceived(const QXmppIq &iq)
             PeaceDelay* p = _delays->value(i);
             p->isReceived = true;
             p->delayms = p->timer.elapsed();
+            _avg_t += p->delayms;
+            ++_avg_n;
         }
 }
 
@@ -128,6 +132,7 @@ void WindowPeace::updateDelays()
         ui->lstDelays->addItem(iq + " : " + QString::number(value) + " ms");
     }
     ui->lstDelays->scrollToBottom();
+    ui->lblAvg->setText("Average : " + QString::number( ((double)_avg_t)/_avg_n ));
 }
 
 
@@ -152,6 +157,8 @@ void WindowPeace::on_btnStart_clicked()
             delete _delays->value(i);
         delete _delays;
         _delays = new QList<PeaceDelay*>();
+        _avg_t=0;
+        _avg_n=0;
         _timer.start(ui->spinDelayLoop->value());
     }
 }

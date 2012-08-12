@@ -40,6 +40,8 @@ private:
     QTimer _timer;
     QXmppElementList el;
     QXmppElement* el1;
+    int _avg_t;
+    int _avg_n;
     void updateXML();
     void updateDelays();
 
