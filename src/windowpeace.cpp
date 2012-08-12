@@ -27,6 +27,8 @@ void WindowPeace::on_btnSend_clicked()
     el.clear();
     el.append(*el1);
     QString target = ui->txtTarget->text();
+
+    for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
     {
         QXmppIq iq;
         iq.setTo(target);
@@ -106,10 +108,7 @@ void WindowPeace::iqReceived(const QXmppIq &iq)
 void WindowPeace::onTimerTimeout()
 {
     if(_isStarted)
-        for(int i=0, e=ui->spinConcurrent->value(); i<e; ++i)
-        {
             on_btnSend_clicked();
-        }
     updateDelays();
 }
 
@@ -132,7 +131,10 @@ void WindowPeace::updateDelays()
         ui->lstDelays->addItem(iq + " : " + QString::number(value) + " ms");
     }
     ui->lstDelays->scrollToBottom();
-    ui->lblAvg->setText("Average : " + QString::number( ((double)_avg_t)/_avg_n ));
+    if(_avg_n>0)
+        ui->lblAvg->setText("Average : " + QString::number( ((double)_avg_t)/_avg_n ) + "  (n=" + QString::number(_avg_n) + ")");
+    else
+        ui->lblAvg->setText("Average : ---");
 }
 
 
@@ -145,6 +147,8 @@ void WindowPeace::on_btnStart_clicked()
         ui->btnSend->setEnabled(true);
         ui->txtTarget->setEnabled(true);
         _timer.stop();
+        updateDelays();
+        _timer.singleShot(500, this, SLOT(onTimerTimeout()));
     }
     else
     {
@@ -153,12 +157,8 @@ void WindowPeace::on_btnStart_clicked()
         ui->btnSend->setEnabled(false);
         ui->txtTarget->setEnabled(false);
 
-        for(int i=0; i<_delays->count(); ++i)
-            delete _delays->value(i);
-        delete _delays;
-        _delays = new QList<PeaceDelay*>();
-        _avg_t=0;
-        _avg_n=0;
+        on_btnClearRes_clicked();
+
         _timer.start(ui->spinDelayLoop->value());
     }
 }
@@ -174,4 +174,15 @@ void WindowPeace::on_btnCopy_clicked()
     texts << ui->lblAvg->text();
 
     QApplication::clipboard()->setText(texts.join("\n"));
+}
+
+void WindowPeace::on_btnClearRes_clicked()
+{
+    for(int i=0; i<_delays->count(); ++i)
+        delete _delays->value(i);
+    delete _delays;
+    _delays = new QList<PeaceDelay*>();
+    _avg_t=0;
+    _avg_n=0;
+    updateDelays();
 }

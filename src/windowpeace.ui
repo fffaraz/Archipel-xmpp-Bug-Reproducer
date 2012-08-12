@@ -213,7 +213,7 @@
       <item>
        <widget class="QLabel" name="lblAvg">
         <property name="text">
-         <string>Average : </string>
+         <string>Average : ---</string>
         </property>
        </widget>
       </item>
@@ -221,6 +221,13 @@
        <widget class="QPushButton" name="btnCopy">
         <property name="text">
          <string>Copy Results</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClearRes">
+        <property name="text">
+         <string>Clear Results</string>
         </property>
        </widget>
       </item>

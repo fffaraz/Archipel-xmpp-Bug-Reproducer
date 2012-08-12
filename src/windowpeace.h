@@ -35,6 +35,8 @@ private slots:
 
     void on_btnCopy_clicked();
 
+    void on_btnClearRes_clicked();
+
 private:
     Ui::WindowPeace *ui;
     xmppClient* client;
