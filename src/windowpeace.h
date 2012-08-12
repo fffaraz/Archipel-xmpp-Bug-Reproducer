@@ -32,6 +32,8 @@ private slots:
     void on_btnAddChild_clicked();
     void on_btnStart_clicked();
 
+    void on_btnCopy_clicked();
+
 private:
     Ui::WindowPeace *ui;
     xmppClient* client;

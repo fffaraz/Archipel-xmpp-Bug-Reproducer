@@ -217,6 +217,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="btnCopy">
+        <property name="text">
+         <string>Copy Results</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>

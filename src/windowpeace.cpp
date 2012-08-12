@@ -162,3 +162,14 @@ void WindowPeace::on_btnStart_clicked()
         _timer.start(ui->spinDelayLoop->value());
     }
 }
+
+void WindowPeace::on_btnCopy_clicked()
+{
+    QStringList texts;
+    foreach(QListWidgetItem *item, items)
+        texts << item->text();
+
+    texts << ui->lblAvg->text();
+
+    QApplication::clipboard()->setText(texts.join("\n"));
+}
