@@ -6,6 +6,7 @@ WindowMain::WindowMain(QWidget *parent) :
     ui(new Ui::WindowMain)
 {
     ui->setupUi(this);
+    //this->setAttribute(Qt::WA_DeleteOnClose);
 
     login = new DialogLogin(this);
     connect(login, SIGNAL(Login(QString,QString)), this, SLOT(onLogin(QString,QString)));

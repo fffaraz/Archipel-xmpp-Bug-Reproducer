@@ -7,6 +7,8 @@ WindowPeace::WindowPeace(xmppClient* Client, QWidget *parent) :
     client(Client)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
+
     _isStarted = false;
     _delays = new QList<PeaceDelay*>();
     el1 = new QXmppElement();

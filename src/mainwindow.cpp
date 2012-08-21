@@ -7,6 +7,7 @@ MainWindow::MainWindow(xmppClient* Client, QWidget *parent) :
     client(Client)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
 
     isStarted=false;
     isOneTime=true;

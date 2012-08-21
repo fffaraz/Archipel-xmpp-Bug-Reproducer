@@ -7,6 +7,7 @@ WindowIq::WindowIq(xmppClient* Client, QWidget *parent) :
     client(Client)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_DeleteOnClose);
     _isStarted = false;
     connect(&_timer, SIGNAL(timeout()), this, SLOT(onTimerTimeout()));
 }
