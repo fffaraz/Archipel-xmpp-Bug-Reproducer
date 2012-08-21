@@ -1,16 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-<<<<<<< HEAD
 MainWindow::MainWindow(xmppClient* Client, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
     client(Client)
-=======
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
->>>>>>> github/master
 {
     ui->setupUi(this);
 
@@ -23,49 +17,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&cmdTimer, SIGNAL(timeout()), this, SLOT(onCMDTimerTimeout()));
     connect(&loopTimer, SIGNAL(timeout()), this, SLOT(onLoopTimerTimeout()));
     loopTimer.setSingleShot(true);
-<<<<<<< HEAD
-=======
-
-    login = new DialogLogin(this);
-    connect(login, SIGNAL(Login(QString,QString)), this, SLOT(onLogin(QString,QString)));
-    login->setWindowTitle("Auth");
-    login->setModal(true);
-    login->show();
->>>>>>> github/master
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-<<<<<<< HEAD
-
-=======
-void MainWindow::onLogin(QString jid, QString pass)
-{
-    client = new xmppClient(this);
-    connect(client, SIGNAL(messageReceived(QString,QString)), this, SLOT(onMessageReceived(QString,QString)));
-    client->connectToServer(jid, pass);
-}
-
-void MainWindow::onMessageReceived(QString from, QString msg)
-{
-    ui->txtChat->append(from + " : ");
-    ui->txtChat->append("<b><div style=\"color:#990099\" ><pre>" + msg + "</pre></div></b>");
-}
-
-void MainWindow::on_btnSend_clicked()
-{
-    sendMessage(ui->txtTarget->text(), ui->txtInput->text());
-    ui->txtInput->clear();
-}
-
-void MainWindow::on_txtInput_returnPressed()
-{
-    on_btnSend_clicked();
-}
->>>>>>> github/master
 
 void MainWindow::on_btnStart_clicked()
 {
@@ -178,11 +135,8 @@ void MainWindow::onLoopTimerTimeout()
 void MainWindow::sendMessage(QString to, QString msg)
 {
     client->sendMessage(to, msg);
-<<<<<<< HEAD
+
     client->Sent(to + ": <b>" + msg + "</b>");
-=======
-    ui->txtChat->append("Me : " + to + ": <b>" + msg + "</b>");
->>>>>>> github/master
 }
 
 void MainWindow::on_chkOneTime_toggled(bool checked)
@@ -194,9 +148,3 @@ void MainWindow::on_radio1_toggled(bool checked)
 {
     loopMode = checked? 1 : 2;
 }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> github/master
